@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    /* * {
+     border: 1px solid red;
+     padding: 5px
+  } */
+
+    .flex {
+        display: flex;
+    }
+
+    .Checkout1 {
+        flex-direction: column;
+    }
+
+    table thead tr td {
+        border-bottom: 1px solid grey;
+    }
+
+    /* Section 1 */
+    .itens-resumo {
+        justify-content: space-between;
+
+    }
+
+    .itens-resumo .item {
+        width: 25%;
+        background-color: #ececec;
+        padding: 0 10px;
+    }
+
+    .itens-resumo .lista-produtos {
+        width: 65%;
+        background-color: #ececec;
+        border: 1px solid grey;
+    }
+
+    .botoes-resumo {
+        min-height: 80px !important;
+        margin-bottom: 30px;
+    }
+
+    /* Section 2 - Opções Pagamento */
+    .opcoes-pagamento {
+        justify-content: space-between;
+    }
+
+    .opcoes-pagamento .tipos-pagamento {
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .opcoes-pagamento .informacoes {
+        width: 65%;
+    }
+
+    .column {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .flex {
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+
+        <h1>Carrinho</h1>
+
+        <section className="itens-resumo flex">
+            <div className="item lista-produtos">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Valor do produtos:</td>
+                            <td>R$ xxx,xx</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brincos Wendy Taylor</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div className="item resumo">
+                <h2>Resumo</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Valor do produtos:</td>
+                            <td>R$ xxx,xx</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frete:</td>
+                            <td>R$ xxx,xx</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>R$ xxx,xx</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div className="flex column botoes-resumo">
+                    <button>Seguir para o pagamento</button>
+                    <button>Continuar comprando</button>
+                </div>
+            </div>
+        </section>
+        <section className="opcoes-pagamento flex">
+            <div className="tipos-pagamento flex">
+                <h3>PRODUTO E FRETE</h3>
+                <div className="flex column">
+                    <p>Produto + Frete = R$XXX,XX</p>
+                </div>
+            </div>
+            <div className="informacoes">
+                
+                
+            </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+        .flex {
+            display: flex;
+        }
+
+        .Checkout1 {
+            flex-direction: column;
+        }
+
+        table thead tr td {
+            border-bottom: 1px solid grey;
+        }
+
+        /* Section 1 */
+        .itens-resumo {
+            justify-content: space-between;
+
+        }
+
+        .itens-resumo .item {
+            width: 25%;
+            background-color: #ececec;
+            padding: 0 10px;
+        }
+
+        .itens-resumo .lista-produtos {
+            width: 65%;
+            background-color: #ececec;
+            border: 1px solid grey;
+        }
+
+        .botoes-resumo {
+            min-height: 80px !important;
+            margin-bottom: 30px;
+        }
+
+        /* Section 2 - Opções Pagamento */
+        .opcoes-pagamento {
+            justify-content: space-between;
+        }
+
+        .opcoes-pagamento .tipos-pagamento {
+            flex-direction: column;
+            width: 25%;
+        }
+
+        .opcoes-pagamento .informacoes {
+            width: 65%;
+        }
+
+        .column {
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .flex {
+                flex-direction: column;
+            }
+        }
