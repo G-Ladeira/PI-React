@@ -44,8 +44,8 @@ export const cart = () => {
                         </tbody>
                     </table>
                     <div className="flex column summary-buttons">
-                    <Button id="proceed-to-payment"> </Button>
-                    <Button id="keep-buying" >  </Button>
+                        <button id='btn'>Seguir ao Pagamento</button>
+                        <button id='btn'>Continuar Comprando</button>
                     </div>
                 </div>
             </section>

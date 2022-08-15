@@ -44,8 +44,8 @@ export const checkout = () => {
                         </tbody>
                     </table>
                     <div className="flex column summary-buttons">
-                        <Button id="proceed-to-payment"> </Button>
-                        <Button id="keep-buying" >  </Button>
+                        <button id='btn'>Ir ao Pagamento</button>
+                        <button id='btn'>Continuar Comprando</button>
                     </div>
                 </div>
             </section>
@@ -53,15 +53,9 @@ export const checkout = () => {
                 <div className="payment-option2 flex">
                     <h3>Checkout</h3>
                     <div className="flex column">
-                        <Button id="PIX">
-                            <b>PIX</b>
-                        </Button>
-                        <Button id="Cards">
-                            <b>Cartões</b>
-                        </Button>
-                        <Button id="Billet">
-                            <b>Boleto</b>
-                        </Button>
+                        <button id='btn'>Pix</button>
+                        <button id='btn'>Cartões</button>
+                        <button id='btn'>Boleto</button>
                     </div>
                 </div>
                 <div className="information">
