@@ -17,7 +17,7 @@ const Header = () => {
         <li >Joias</li>
         <li >Bijuteria</li>
         <li >Contato</li>
-
+        
 
 
       </ul>
