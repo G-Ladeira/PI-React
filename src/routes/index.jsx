@@ -2,7 +2,7 @@ import { Routes, Route} from "react-router-dom";
 import { Home } from "../views/home/index";
 import { AboutUs } from "../views/aboutUs";
 import { Product } from "../views/product";
-import { Products } from "../views/products";
+import { Products } from "../views/Products";
 
 export const MainRoutes = ()=>{
     return (
