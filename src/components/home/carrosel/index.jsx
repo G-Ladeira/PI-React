@@ -4,9 +4,9 @@ import Carousel from 'react-material-ui-carousel';
 import avatar from './img/produto.png'
 
 
-import "./carro.sass"
+import "./styled.sass"
 
-const Demo = () => (
+const CarouselHome = () => (
   <Carousel>
     {/* Change above line to <> and it work, maybe some issues in carousel */}
     <Paper>
@@ -27,4 +27,4 @@ const Demo = () => (
   </Carousel>
 );
 
-export default Demo;
+export default CarouselHome;

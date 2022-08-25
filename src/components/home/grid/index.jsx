@@ -1,7 +1,7 @@
 import React from 'react'
-import "./gridHome.sass"
+import "./styled.sass"
 
-const Index = () => {
+const GridHome = () => {
   return (
     <section className='sectionGrid'>
         <article className='articleGrid'>
@@ -21,4 +21,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default GridHome
