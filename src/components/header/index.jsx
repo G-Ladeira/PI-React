@@ -1,4 +1,4 @@
-import './header.sass'
+import './styled.sass'
 
 
 
@@ -17,7 +17,7 @@ const Header = () => {
         <li >Joias</li>
         <li >Bijuteria</li>
         <li >Contato</li>
-
+        
 
 
       </ul>
