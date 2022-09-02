@@ -1,38 +1,27 @@
-import './styled.sass'
-
-
-
-
+import { Link } from "react-router-dom";
+import "./styled.sass";
 
 const Header = () => {
   return (
     <main>
-
       <h1>Wendy Taylor</h1>
 
       <ul>
-
-
-        <li >Sobre nós</li>
-        <li >Joias</li>
-        <li >Bijuteria</li>
-        <li >Contato</li>
-        
-
-
+        <Link to={"/aboutUs"}>
+          <li>Joias</li>
+        </Link>
+        <Link to={"/aboutUs"}>
+          <li>Sobre nós</li>
+        </Link>
+        <Link to={"/aboutUs"}>
+          <li>Cadastro</li>
+        </Link>
+        <Link to={"/aboutUs"}>
+          <li>Login</li>
+        </Link>
       </ul>
-
-
-
     </main>
-
-
-
-
-
-
-
-  )
-}
+  );
+};
 
 export default Header

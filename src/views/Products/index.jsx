@@ -7,9 +7,9 @@ import "./list_products";
 export const Products = () => {
   return (
     <body>
-      <h2>X produtos encontrados</h2>
-      <section>
-        <article>
+      <h2 className="productsText">X produtos encontrados</h2>
+      <section id="grid">
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -22,7 +22,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -35,7 +35,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -48,7 +48,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -61,7 +61,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -74,7 +74,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -87,7 +87,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
@@ -100,7 +100,7 @@ export const Products = () => {
             <p>10 x de xxx,xx</p>
           </div>
         </article>
-        <article>
+        <article id="boxProducts">
           <div className="img_cards">
             <img
               className="img_products"
