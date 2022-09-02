@@ -5,6 +5,7 @@ import { Product } from "../views/product";
 import { Products } from "../views/products";
 import  Login  from "../views/login";
 import Cadastro from "../views/cadastro";
+import Perfil from "../views/perfil"
 
 
 
@@ -19,6 +20,7 @@ export const MainRoutes = ()=>{
             <Route path="/products" element={<Products />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/perfil" element={<Perfil/>}/>
 
             </Routes> 
         </>
