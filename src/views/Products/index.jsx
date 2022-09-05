@@ -8,7 +8,7 @@ export const Products = () => {
   return (
     <body>
       <h2>X produtos encontrados</h2>
-      <section>
+      <section className="sectionProducts">
         <article>
           <div className="img_cards">
             <img
