@@ -28,7 +28,7 @@ function returnError(menssage,data = null){
         const nome = req.body.nome
         const pwd = req.body.password
 
-        if (nome == 'Kinder' && pwd == 'paupequeno') {
+        if (nome === 'Kinder' && pwd === '123') {
             let dadosUsuario = "xablau"
             res.json(returnSuccess('Usuário Logado com Sucesso!', dadosUsuario))
         } else {
