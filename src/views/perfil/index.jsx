@@ -1,10 +1,11 @@
 import React from 'react'
+import UserView from '../../components/perfil/Index'
 
 const Perfil = () => {
   return (
 
     <div>
-        <p> sadhjaiudhaui</p>
+      <UserView/>
     </div>
 
   )
