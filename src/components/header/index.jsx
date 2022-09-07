@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./styled.sass";
-import UserLogged from "../userOn"
+// import UserLogged from "../userOn"
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           <li>Login</li>
         </Link>
       </ul>
-      <UserLogged/>
+      {/* <UserLogged/> */}
     </main>
   );
 };
