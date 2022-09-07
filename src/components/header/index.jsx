@@ -4,21 +4,29 @@ import "./styled.sass";
 
 const Header = () => {
   return (
-    <main>
+    <main className="navBar">
+
+      
+
+
       <h1>Wendy Taylor</h1>
 
-      <ul>
-        <Link to={"/aboutUs"}>
-          <li>Joias</li>
+      
+      
+
+
+      <ul className="navOptions">
+      <Link to={"/aboutUs"}>
+          <li className="toJoias" >Joias</li>
         </Link>
         <Link to={"/aboutUs"}>
-          <li>Sobre nós</li>
+          <li className="toAbt" >Sobre nós</li>
         </Link>
-        <Link to={"/aboutUs"}>
-          <li>Cadastro</li>
+        <Link to={"/cadastro"}>
+          <li className="toCadst" >Cadastro</li>
         </Link>
-        <Link to={"/aboutUs"}>
-          <li>Login</li>
+        <Link to={"/login"}>
+          <li className="toLogin" >Login</li>
         </Link>
       </ul>
       {/* <UserLogged/> */}

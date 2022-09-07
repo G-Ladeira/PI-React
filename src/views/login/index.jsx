@@ -1,13 +1,25 @@
 import React from 'react'
+import Footer from '../../components/footer'
+import Header from '../../components/header'
 import LoginCadastro from '../../components/login/LoginCad'
+
+import "./style.sass"
 
 
 const Login = () => {
   return (
     <div>
 
-    <LoginCadastro />
 
+    <Header  />
+
+    <div className='loginCadastro'>
+    <LoginCadastro />
+    </div>
+
+    <div className='footerV'>
+    <Footer />
+    </div>
 
 
         

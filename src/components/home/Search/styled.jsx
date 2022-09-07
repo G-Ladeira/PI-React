@@ -4,10 +4,10 @@ import "./styled.sass"
 
 const SearchHome = () => {
   return (
-    <main>
-        <form>
-                <input type="text" name="busca" placeholder="Digite a sua busca"/>
-                <button>Buscar</button>
+    <main className='mainSearch'>
+        <form className='formSearch'>
+                <input className='inputSearch' type="text" name="busca" placeholder="Digite a sua busca"/>
+                <button className='buttonSearch' >Buscar</button>
             </form>
 
     </main>

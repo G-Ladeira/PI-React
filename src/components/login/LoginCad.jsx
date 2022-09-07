@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import React from 'react'
 
 
@@ -10,10 +12,11 @@ import "./login.sass"
 
 const LoginCadastro = () => {
   return (
-  <section id='container'>
+    <main id='containerPrimary'>
+      <div id='container'>
 
         <div className='banner'>
-            
+
 
 
         </div>
@@ -22,33 +25,37 @@ const LoginCadastro = () => {
 
         <div className='box-login'>
 
-            
-
-                <div className='box'> 
-                <h2>Faça o seu login agora</h2>
-                <input  type="text" name='nome' id='nome' placeholder='Nome' />
-                <input type='password' name='password' id='Senha' placeholder='Senha' />
-
-                <button className='button'>Login</button>
-
-                <a href='www.google.com'>
-
-                    <p>Criar conta</p>
-
-                </a>
-
-                    <div className='social' >
-
-                        <img  id='img-icon' src={facebook}  alt="face" />
-                        <img  id='img-icon' src={twitter}  alt="face" />
-                        <img  id='img-icon' src={google}  alt="face" />
-                        <img  id='img-icon' src={github}  alt="face" />
 
 
-                    </div>
+          <div className='box'>
+            <h2>Faça o seu login agora</h2>
+            <input type="text" name='nome' id='nome' placeholder='Nome' />
+            <input type='password' name='password' id='Senha' placeholder='Senha' />
+
+            <button className='button'>Login</button>
 
 
-                </div>
+
+
+            <Link to={"/cadastro"}>
+              <p>Criar conta</p>
+            </Link>
+
+
+
+
+            <div className='social' >
+
+              <img id='img-icon' src={facebook} alt="face" />
+              <img id='img-icon' src={twitter} alt="face" />
+              <img id='img-icon' src={google} alt="face" />
+              <img id='img-icon' src={github} alt="face" />
+
+
+            </div>
+
+
+          </div>
 
         </div>
 
@@ -59,8 +66,8 @@ const LoginCadastro = () => {
 
 
 
-  </section>
-
+      </div>
+    </main>
 
 
   )

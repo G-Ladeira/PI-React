@@ -9,6 +9,9 @@ import SearchHome from '../../components/home/Search/styled';
 import ListHome from '../../components/home/Items/index';
 
 
+import "./style.sass"
+
+
 
 
 
@@ -22,7 +25,10 @@ export const Home = () => {
             <ListHome />
             <SearchHome />
             <GridHome />
+
+            <div className='FooterH'>
             <Footer/>
+            </div>
             
            
 
