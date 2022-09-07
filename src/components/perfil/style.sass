@@ -1,9 +1,12 @@
+@use "../../styles/global/variables"   
+@use "../../styles/global/mixins" 
+
 .user_view
-    padding: 40px 20px 
+    padding: 40px 20px
 
 .hail
     display: flex
-    
+
     width: 300px
     height: 100px
     border: 1px red solid
@@ -12,10 +15,65 @@
     .wlcm
         color: red
 
-
 .user_optns
     display: flex
-    margin-top: 50px
     width: 300px
     height: 100px
     border: 1px black solid
+
+//CADASTRO--------------------------------------------------------------------
+
+.userDataSection
+    border: 1px red solid
+    display: flex
+
+    .userDataBox
+        border: 1px black solid
+
+        #nomeCad
+            width: 80%
+            height: 30px
+            border: none
+            border-bottom: 1px solid #534e4e
+            outline: none
+            font-weight: 600
+            color: variables.$background-font
+            padding-left: 3px
+
+#passwordCad
+    width: 80%
+    height: 30px
+    border: none
+    border-bottom: 1px solid #534e4e
+    outline: none
+    font-weight: 600
+    color: variables.$background-font
+    padding-left: 3px
+
+#telefoneCad
+    width: 80%
+    height: 30px
+    border: none
+    border-bottom: 1px solid #534e4e
+    outline: none
+    font-weight: 600
+    color: variables.$background-font
+    padding-left: 3px
+
+#email
+    width: 80%
+    height: 30px
+    border: none
+    border-bottom: 1px solid #534e4e
+    outline: none
+    font-weight: 600
+    color: variables.$background-font
+    padding-left: 3px
+
+#buttonCriar
+    cursor: pointer
+    width: 120px
+    height: 35px
+    border: none
+    border-radius: 5px
+    background: variables.$backgraund-footer
