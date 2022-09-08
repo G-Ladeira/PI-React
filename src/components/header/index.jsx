@@ -16,7 +16,7 @@ const Header = () => {
 
 
       <ul className="navOptions">
-      <Link to={"/aboutUs"}>
+      <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
         </Link>
         <Link to={"/aboutUs"}>
