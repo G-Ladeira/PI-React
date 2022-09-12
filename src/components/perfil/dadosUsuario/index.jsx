@@ -1,20 +1,12 @@
 import React from 'react'
-import { ImUser } from "react-icons/im";
+
+import "./style.sass";
 
 const AlterCadastro = () => {
   return (
 
     <div className="userDataSection">
-      <div className='user_optns'>
-        <div className="user_data">
-          <ImUser />
-
-          <h3 className='optn_name'>Cadastro</h3>
-          <span>Altere seus dados cadastrais.</span>
-        </div>
-
-
-      </div>
+      
 
 
 
@@ -25,16 +17,21 @@ const AlterCadastro = () => {
           <h1 id='dataTitle'>Seus dados</h1>
 
           <div className='dataForm'>
+            <label htmlFor='Nome' className='labelForm'>Nome Completo</label>
+            <input type="text" name='Nome' id='altCad' placeholder='Nome'/>
 
-            <input type="text" name='Nome' id='nomeCad' placeholder='Nome'/>
-            <input type="email" name='email' id='email' placeholder='E-mail'/>
-            <input type="password" name='password' id='passwordCad' placeholder='Senha'/>
-            <input type="tel" name= "telefone" id= 'telefoneCad' placeholder='Telefone' />
+            <label htmlFor='email' className='labelForm'>E-mail</label>
+            <input type="email" name='email' id='altEmail' placeholder='E-mail'/>
+
+            <label htmlFor='telefone' className='labelForm'>Telefone</label>
+            <input type="tel" name= "telefone" id= 'altTel' placeholder='Telefone' />
+
+            <label htmlFor='cpf' className='labelForm'>CPF</label>
+            <input type="text" name= "cpf" id= 'altcpf' placeholder='CPF' />
 
 
 
-
-            <button id='buttonCriar'> Atualizar</button>
+            <button id='buttonAtt'> Salvar os Dados </button>
 
 
           </div>
