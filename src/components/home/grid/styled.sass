@@ -1,41 +1,26 @@
 .sectionGrid
-    width: 1000px
-    display: grid
-    grid-template-columns: 24% 24% 24% 24%
-    gap: 1%
+    display: flex
     justify-content: center
-    margin: 20px auto
+    align-items: center
+    overflow: hidden
+    position: relative
+    top: 70px
+    justify-content: space-evenly
+    
 
-    .justf_center
-      display: flex 
+.img_products
+    max-width: 100%
+    max-height: 100%
+    width: 200px
+    height: 200px
+
+     
+
+       
+
+      
 
 
-      .articleGrid
-        padding: 5%
-        width: 90%
-        transition: 500ms
-        cursor: pointer
-        border-radius: 8px
-        background-color: #F1F1F1
-        border-top: 1px solid rgb(229, 229, 229)
-        overflow: hidden
-        height: 300px
-        margin: 0px auto 20px auto
-        display: flex
-        flex-direction: column
 
-        &:hover
-          box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(58, 58, 58, 0.25)
 
-          .img_cards
-            height: 80%
-            .img_products
-              max-width: 100%
-              height: 100%
 
-          .price_cards
-            text-align: center
-            height: 20%
-            display: flex
-            flex-direction: column
-            justify-content: center

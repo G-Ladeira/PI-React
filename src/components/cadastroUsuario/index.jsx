@@ -5,8 +5,8 @@ import "./cadastro.sass"
 
 const CadastroUsuario = () => {
   return (
-    
-    <section id='continer2'>
+    <main className='cadastroC'>
+    <div id='continer2'>
 
       <div className='boxLogin'>
           <h1 id='textCriar'>Criar Seu Cadastro</h1>
@@ -43,10 +43,10 @@ const CadastroUsuario = () => {
 
 
 
-    </section>
+    </div>
 
 
-
+    </main>
 
   )
 }

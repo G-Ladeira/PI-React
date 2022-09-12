@@ -10,17 +10,17 @@ const CarouselHome = () => (
   <Carousel>
     {/* Change above line to <> and it work, maybe some issues in carousel */}
     <Paper>
-        <img src={avatar} alt="sa" ></img>
+        <img id='imgCarrosel' src={avatar} alt="sa" ></img>
       
       
     </Paper>
     <Paper>
-        <img src={avatar} alt="sa" ></img>
+        <img id='imgCarrosel' src={avatar} alt="sa" ></img>
       
       
     </Paper>
     <Paper>
-        <img src={avatar} alt="sa" ></img>
+        <img id='imgCarrosel' src={avatar} alt="sa" ></img>
       
       
     </Paper>
