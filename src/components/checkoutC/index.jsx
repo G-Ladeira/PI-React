@@ -8,17 +8,10 @@ import "./style.sass"
 const CheckoutC = () => {
   return (
     <section className='checkoutBoX'>
-
       <div className='checkBox'>
       <Payment />
       </div>
-
-
-      
       <Resume />
-
-
-
     </section>
   )
 }

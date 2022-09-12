@@ -9,6 +9,7 @@ import Perfil from "../views/perfil"
 import AboutView from "../views/aboutUs";
 import CheChout from "../views/checkout";
 import Cart from "../views/cart";
+import Products from "../views/products";
 
 
 
@@ -25,6 +26,7 @@ export const MainRoutes = ()=>{
             <Route path="/perfil" element={<Perfil/>}/>
             <Route path="/checkout" element={<CheChout />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/products" element={<Products />} />
 
             </Routes> 
         </>

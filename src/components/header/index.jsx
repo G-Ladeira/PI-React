@@ -9,17 +9,17 @@ const Header = () => {
       <h1>Wendy Taylor</h1>
       <Button variant="contained">Hello World</Button>
       <ul className="navOptions">
-        <Link to={"/aboutUs"}>
-          <li className="toJoias">Joias</li>
+      <Link to={"/products"}>
+          <li className="toJoias" >Joias</li>
         </Link>
         <Link to={"/aboutUs"}>
-          <li className="toAbt">Sobre nós</li>
+          <li className="toAbt" >Sobre nós</li>
         </Link>
-        <Link to={"/aboutUs"}>
-          <li className="toCadst">Cadastro</li>
+        <Link to={"/cadastro"}>
+          <li className="toCadst" >Cadastro</li>
         </Link>
-        <Link to={"/aboutUs"}>
-          <li className="toLogin">Login</li>
+        <Link to={"/login"}>
+          <li className="toLogin" >Login</li>
         </Link>
       </ul>
       <BasicMenu />

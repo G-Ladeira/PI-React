@@ -28,15 +28,15 @@ useEffect(() => {
 
 {repositories.map((p, i) => {
 
-return <article id="articleGrid">
-  <div className="img_cards">
+return <article >
+  <div >
     <img
       className="img_products"
       src="../images/joias2.png"
       alt="product"
     />
   </div>
-  <div className="price_cards">
+  <div >
     <p>{p.nome}</p>
     <p>{p.descricao}</p>
   </div>
