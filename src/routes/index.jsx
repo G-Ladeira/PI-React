@@ -1,10 +1,12 @@
 import { Routes, Route} from "react-router-dom";
 import { Home } from "../views/home";
-import { AboutUs } from "../views/aboutUs";
+
 import { Product } from "../views/product";
+
 import  Login  from "../views/login";
 import Cadastro from "../views/cadastro";
 import Perfil from "../views/perfil"
+import AboutView from "../views/aboutUs";
 import CheChout from "../views/checkout";
 import Cart from "../views/cart";
 
@@ -16,7 +18,7 @@ export const MainRoutes = ()=>{
         <>
            <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/aboutUs" element={<AboutUs/>}/>
+            <Route path="/aboutUs" element={<AboutView/>}/>
             <Route path="/product" element={<Product/>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
