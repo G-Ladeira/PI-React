@@ -2,16 +2,18 @@ import React from 'react'
 import "./sytle.sass"
 import { useState, useEffect } from 'react';
 
-const url = "https://mocki.io/v1/c12e210f-6d15-46ab-b5ae-9db8b138ea2b"
+const url = "http://localhost:3002/produtos"
 
 const ProductsC = () => {
 
     const [repositories, setRepositories] = useState([]);
     
     useEffect(() => {
-      fetch(url)
+   
+      fetch(url, {mode:'cors'})
         .then(response => response.json())
         .then(data => setRepositories(data))
+
     
     }, []);
     

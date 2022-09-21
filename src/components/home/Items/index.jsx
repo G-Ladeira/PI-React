@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState , useEffect} from 'react';
 import ItemsHome from './item';
+import './styled.sass'
 
 
 
@@ -32,7 +33,7 @@ const ListHome = () => {
 
             
 
-            <section>
+            <section className='repositoryMap'>
                 
                 {repositories.map((repository,index) => { 
                     if (index <= 3 ){ 

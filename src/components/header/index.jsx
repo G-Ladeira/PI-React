@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import "./styled.sass";
-import Button from '@mui/material/Button';
 import BasicMenu from "../userOn";
 
 const Header = () => {
   return (
     <main className="navBar">
       <h1>Wendy Taylor</h1>
-      <Button variant="contained">Hello World</Button>
       <ul className="navOptions">
       <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
