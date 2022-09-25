@@ -3,10 +3,15 @@ import "./styled.sass";
 import Button from '@mui/material/Button';
 import BasicMenu from "../userOn";
 
+
+
 const Header = () => {
   return (
     <main className="navBar">
-      <h1>Wendy Taylor</h1>
+      <Link className="linkTest" to={"/"}>
+      <h1 className="btnH1">Wendy Taylor</h1>
+      
+      </Link>
       <Button variant="contained">Hello World</Button>
       <ul className="navOptions">
       <Link to={"/products"}>
