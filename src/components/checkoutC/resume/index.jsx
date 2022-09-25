@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom"
+
 
 import "./style.sass"
 
@@ -10,7 +12,12 @@ const Resume = () => {
         <p>Valor total: R$ xxx,xx</p>
       </table>
       <div className="resume-buttons">
-        <button>Continuar comprando</button>
+        <Link to={"/cart"}>
+        <button className='SPP'>Seguir para o Pagamento</button>
+        </Link>
+        <Link to={"/products"}>
+        <button className='CC'>Continuar comprando</button>
+        </Link>
       </div>
     </div>
   )
