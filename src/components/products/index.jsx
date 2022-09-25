@@ -14,21 +14,12 @@ const ProductsC = () => {
       fetch(url)
         .then(response => response.json())
         .then(data => setRepositories(data))
-    
     }, []);
-    
-    
       return (
-    
         <div>
         <h2 className='produto' >X produtos encontrados</h2>
-    
         <section className='sectionGrid1'>
-            
-            
-    
     {repositories.map((p, i) => {
-    
     return <article >
       <div >
         <Link to={"/product"}>
@@ -45,8 +36,11 @@ const ProductsC = () => {
         <p>{p.nome}</p>
         <p>{p.descricao}</p>
       </div>
+<<<<<<< HEAD
       
       
+=======
+>>>>>>> 484cdc68dfef3668af8abc414c5dbfb3bafe474b
       <div  className='linha2'>
       <Link to={"/product"}>
         <img
@@ -60,9 +54,11 @@ const ProductsC = () => {
         <p>{p.nome}</p>
         <p>{p.descricao}</p>
       </div>
-
       <div  className='linha3'>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 484cdc68dfef3668af8abc414c5dbfb3bafe474b
         <Link to={"/product"}>
         <img
           className="img_products1"
@@ -75,30 +71,10 @@ const ProductsC = () => {
         <p>{p.nome}</p>
         <p>{p.descricao}</p>
       </div>
-
-      
-
     </article>
-    
-    
     })}
-    
-    
-    
-    
           </section>
-    
           </div>
       )}
-    
     export default ProductsC
-
-
-
-
-
-
-
-
-
 
