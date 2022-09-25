@@ -9,12 +9,12 @@ const Header = () => {
   return (
     <main className="navBar">
       <Link className="linkTest" to={"/"}>
-      <h1 className="btnH1">Wendy Taylor</h1>
-      
+        <h1 className="btnH1">Wendy Taylor</h1>
+
       </Link>
       <Button variant="contained">Hello World</Button>
       <ul className="navOptions">
-      <Link to={"/products"}>
+        <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
         </Link>
         <Link to={"/aboutUs"}>
