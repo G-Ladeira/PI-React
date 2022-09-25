@@ -10,7 +10,6 @@ const Resume = () => {
         <p>Valor total: R$ xxx,xx</p>
       </table>
       <div className="resume-buttons">
-        <button>Seguir para o pagamento</button>
         <button>Continuar comprando</button>
       </div>
     </div>
