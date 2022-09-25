@@ -21,7 +21,7 @@ const ListHome = () => {
         .then(data => setRepositories(data))
         
     },[]);
-    console.log(repositories)
+    
 
     
     
