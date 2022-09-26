@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState , useEffect} from 'react';
 import ItemsHome from './item';
+import './styled.sass'
 
 
 
@@ -19,37 +20,37 @@ const ListHome = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => setRepositories(data))
-        
-    },[]);
-    
 
-    
-    
-    
+    },[]);
+    console.log(repositories)
+
+
+
+
 
     return (
         <section className='repository-list'>
 
-            
 
-            <section>
-                
+
+            <section className='repositoryMap'>
+
                 {repositories.map((repository,index) => { 
                     if (index <= 3 ){ 
                         const item = <ItemsHome  key={index} repository={repository}/>
-                        
+
                         return   item}
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                   
+
+
+
+
+
+
+
+
                 })}
-                
-               
+
+
 
 
 
