@@ -12,6 +12,9 @@ const Payment = () => {
         </div>
     </div>
     <div className="information">
+
+    <p>informações do produto</p>
+
     </div>
 </section>
 

@@ -4,16 +4,18 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 
-const url = "https://mocki.io/v1/c12e210f-6d15-46ab-b5ae-9db8b138ea2b"
+const url = "http://localhost:3002/produtos"
 
 const ProductsC = () => {
 
     const [repositories, setRepositories] = useState([]);
 
     useEffect(() => {
-      fetch(url)
+   
+      fetch(url, {mode:'cors'})
         .then(response => response.json())
         .then(data => setRepositories(data))
+
     }, []);
       return (
         <div>

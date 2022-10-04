@@ -2,18 +2,25 @@ import { Link } from "react-router-dom";
 import CartHeader from "./cartHeader";
 import "./styled.sass";
 
+
 import BasicMenu from "./userOn";
+
+
 
 
 
 const Header = () => {
   return (
     <main className="navBar">
+
       <Link className="linkTest" to={"/"}>
         <h1 className="btnH1">Wendy Taylor</h1>
 
       </Link>
       
+
+
+
       <ul className="navOptions">
         <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
