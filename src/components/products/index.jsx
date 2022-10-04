@@ -9,7 +9,7 @@ const url = "https://mocki.io/v1/c12e210f-6d15-46ab-b5ae-9db8b138ea2b"
 const ProductsC = () => {
 
     const [repositories, setRepositories] = useState([]);
-    
+
     useEffect(() => {
       fetch(url)
         .then(response => response.json())
@@ -26,9 +26,7 @@ const ProductsC = () => {
         <img
           className="img_products1"
           src="../images/joias2.png"
-          
           alt="product"
-          
         />
         </Link>
       </div>
@@ -36,11 +34,6 @@ const ProductsC = () => {
         <p>{p.nome}</p>
         <p>{p.descricao}</p>
       </div>
-<<<<<<< HEAD
-      
-      
-=======
->>>>>>> 484cdc68dfef3668af8abc414c5dbfb3bafe474b
       <div  className='linha2'>
       <Link to={"/product"}>
         <img
@@ -55,10 +48,6 @@ const ProductsC = () => {
         <p>{p.descricao}</p>
       </div>
       <div  className='linha3'>
-<<<<<<< HEAD
-
-=======
->>>>>>> 484cdc68dfef3668af8abc414c5dbfb3bafe474b
         <Link to={"/product"}>
         <img
           className="img_products1"
@@ -77,4 +66,3 @@ const ProductsC = () => {
           </div>
       )}
     export default ProductsC
-

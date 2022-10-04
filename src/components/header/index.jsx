@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import CartHeader from "./cartHeader";
 import "./styled.sass";
-import Button from '@mui/material/Button';
-import BasicMenu from "../userOn";
+
+import BasicMenu from "./userOn";
 
 
 
@@ -12,7 +13,7 @@ const Header = () => {
         <h1 className="btnH1">Wendy Taylor</h1>
 
       </Link>
-      <Button variant="contained">Hello World</Button>
+      
       <ul className="navOptions">
         <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
@@ -26,8 +27,11 @@ const Header = () => {
         <Link to={"/login"}>
           <li className="toLogin" >Login</li>
         </Link>
+        
       </ul>
+      <CartHeader />
       <BasicMenu />
+      
     </main>
   );
 };
