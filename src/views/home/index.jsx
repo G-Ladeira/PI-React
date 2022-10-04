@@ -21,7 +21,9 @@ export const Home = () => {
         <>
         <aside>
             <Header/>
+            <div className='CarouselH'>
             <CarouselHome />
+            </div>
             <ListHome />
             <SearchHome />
             <GridHome />

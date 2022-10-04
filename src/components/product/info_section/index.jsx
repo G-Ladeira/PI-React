@@ -22,7 +22,7 @@ const Info = () => {
     // try {
 
     let cardProduto = <>
-        <span className="prdt-colection">Coleção do produto</span>
+        <span className="prdt-colection">{repositories.colecao}</span>
 
         <h1 className="product-name">{repositories.nome}</h1>
 

@@ -7,12 +7,14 @@ const Payment = () => {
    
 <section className='resumetwo'>
     <div className="payment-type flex">
-      <h1>Pagamento</h1>
+      <h1>Carrinho de Compras:</h1>
         <div className="flex column">
         </div>
     </div>
     <div className="information">
+
     <p>informações do produto</p>
+
     </div>
 </section>
 
@@ -21,3 +23,5 @@ const Payment = () => {
 }
 
 export default Payment
+
+

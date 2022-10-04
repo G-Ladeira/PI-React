@@ -20,37 +20,39 @@ const ListHome = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => setRepositories(data))
-        
+
     },[]);
     console.log(repositories)
 
-    
-    
-    
+
+
+
 
     return (
         <section className='repository-list'>
 
-            
+
+
 
             <section className='repositoryMap'>
-                
+
+
                 {repositories.map((repository,index) => { 
                     if (index <= 3 ){ 
                         const item = <ItemsHome  key={index} repository={repository}/>
-                        
+
                         return   item}
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                   
+
+
+
+
+
+
+
+
                 })}
-                
-               
+
+
 
 
 

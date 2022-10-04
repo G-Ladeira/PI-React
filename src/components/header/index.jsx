@@ -1,13 +1,28 @@
 import { Link } from "react-router-dom";
+import CartHeader from "./cartHeader";
 import "./styled.sass";
-import BasicMenu from "../userOn";
+
+
+import BasicMenu from "./userOn";
+
+
+
+
 
 const Header = () => {
   return (
     <main className="navBar">
-      <h1>Wendy Taylor</h1>
+
+      <Link className="linkTest" to={"/"}>
+        <h1 className="btnH1">Wendy Taylor</h1>
+
+      </Link>
+      
+
+
+
       <ul className="navOptions">
-      <Link to={"/products"}>
+        <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
         </Link>
         <Link to={"/aboutUs"}>
@@ -19,8 +34,11 @@ const Header = () => {
         <Link to={"/login"}>
           <li className="toLogin" >Login</li>
         </Link>
+        
       </ul>
+      <CartHeader />
       <BasicMenu />
+      
     </main>
   );
 };
