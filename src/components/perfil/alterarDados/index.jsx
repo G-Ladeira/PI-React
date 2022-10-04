@@ -14,7 +14,7 @@ const AlterCadastro = () => {
 
 
       <div className='userDataBox'>
-          <h1 id='dataTitle'>Seus dados</h1>
+          <h1 id='dataTitle'>Alterar dados</h1>
 
           <div className='dataForm'>
             <label htmlFor='Nome' className='labelForm'>Nome Completo</label>
@@ -26,8 +26,8 @@ const AlterCadastro = () => {
             <label htmlFor='telefone' className='labelForm'>Telefone</label>
             <input type="tel" name= "telefone" id= 'altTel' placeholder='Telefone' />
 
-            <label htmlFor='cpf' className='labelForm'>CPF</label>
-            <input type="text" name= "cpf" id= 'altcpf' placeholder='CPF' />
+            <label htmlFor='Senha' className='labelForm'>Senha</label>
+            <input type="text" name= "Senha" id= 'altSenha' placeholder='Senha' />
 
 
 

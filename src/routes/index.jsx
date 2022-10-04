@@ -10,6 +10,7 @@ import AboutView from "../views/aboutUs";
 import CheChout from "../views/checkout";
 import Cart from "../views/cart";
 import Products from "../views/products";
+import Teste from "../views/Teste";
 
 
 
@@ -27,6 +28,8 @@ export const MainRoutes = ()=>{
             <Route path="/checkout" element={<CheChout />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/test" element={<Teste />} />
+           
 
             </Routes> 
         </>
