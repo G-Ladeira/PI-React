@@ -11,6 +11,7 @@ import CheChout from "../views/checkout";
 import Cart from "../views/cart";
 import Products from "../views/products";
 import Teste from "../views/Teste";
+import ItemsHome from "../components/home/Items/item";
 
 
 
@@ -29,7 +30,7 @@ export const MainRoutes = ()=>{
             <Route path="/cart" element={<Cart />} />
             <Route path="/products" element={<Products />} />
             <Route path="/test" element={<Teste />} />
-           
+            <Route path="/categorias/:id" exact element={<Products/>}/>
 
             </Routes> 
         </>

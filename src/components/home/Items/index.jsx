@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState , useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import ItemsHome from './item';
 import './styled.sass'
 
@@ -35,8 +36,10 @@ const ListHome = () => {
 
 
             <section className='repositoryMap'>
+            <Link key='1' to={`/categorias/2`}>
 
-
+                <button>categoria2</button>
+                </Link>
                 {repositories.map((repository,index) => { 
                     if (index <= 3 ){ 
                         const item = <ItemsHome  key={index} repository={repository}/>

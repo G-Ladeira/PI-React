@@ -1,28 +1,49 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
+import { Redirect, useParams } from 'react-router-dom'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import ProductsC from '../../components/products'
-
-
+import api from '../../services'
 import "./style.sass"
 
-const Products = () => {
-  return (
-    <div>
+const Products = (para) => {
 
-    <Header />
+  const [produtos, setProdutos] = useState([]);
+  const idCategoria = useParams()
 
-    <ProductsC />
+  function loadProdutos() {
+    if (idCategoria.id) {
+      api.get(`/categoria/${idCategoria.id}/produtos`)
+        .then(response => {
+          setProdutos(response.data.produtoCategoria)
+        })
+    } else {
+      api.get(`/produtos/todos`)
+        .then(response => {
+          setProdutos(response.data)
+        })
+    }
+  }
+    useEffect(() => {
+      loadProdutos()
+    }, []);
 
-    <div className='footerP'>
-    <Footer />
-    
-    </div>
+    return (
+      <div>
+        <Header />
+
+        <ProductsC produtosCategoria={produtos} />
+
+        <div className='footerP'>
+          <Footer />
+
+        </div>
 
 
 
-    </div>
-  )
-}
+      </div>
+    )
+  }
 
-export default Products
+  export default Products
