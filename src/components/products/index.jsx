@@ -30,12 +30,12 @@ const ProductsC = (props) => {
   // }, []);
   return (
     <div>
-      <h2 className='produto' >X produtos encontrados</h2>
+      <h2 className='produto' >{props.produtosCategoria.length} produtos encontrados</h2>
       <section className='sectionGrid1'>
         {props.produtosCategoria.map((p, i) => {
-          return <article >
+          return <article key={i}>
             <div >
-              <Link to={`/product/${p.id}/produtos`}>
+              <Link to={`/product/${p.id}`}>
                 <img
                   className="img_products1"
                   src="../images/joias2.png"
@@ -45,34 +45,8 @@ const ProductsC = (props) => {
             </div>
             <div className='infoP'>
               <p>{p.nome}</p>
-              <p>{p.descricao}</p>
+              <p>R${p.preco}</p>
             </div>
-            {/* <div className='linha2'>
-              <Link to={"/product"}>
-                <img
-                  className="img_products1"
-                  src="../images/joias2.png"
-                  alt="product"
-                />
-              </Link>
-            </div> */}
-            {/* <div className='infoP'>
-              <p>{p.nome}</p>
-              <p>{p.descricao}</p>
-            </div>
-            <div className='linha3'>
-              <Link to={"/product"}>
-                <img
-                  className="img_products1"
-                  src="../images/joias2.png"
-                  alt="product"
-                />
-              </Link>
-            </div>
-            <div className='infoP'>
-              <p>{p.nome}</p>
-              <p>{p.descricao}</p>
-            </div> */}
           </article>
         })}
       </section>

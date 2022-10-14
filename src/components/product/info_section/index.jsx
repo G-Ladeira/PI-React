@@ -7,7 +7,7 @@ const url = "https://mocki.io/v1/9234e80f-9572-4d0a-8d55-e7020e912a3a"
 
 
 
-const Info = () => {
+const Info = (props) => {
 
     const [repositories, setRepositories] = useState("")
     useEffect(() => {
@@ -16,17 +16,17 @@ const Info = () => {
                 .then(response => response.json())
                 .then(data => setRepositories(data))
 
-        }, 2000);
+        }, );
     }, []);
 
     // try {
 
     let cardProduto = <>
-        <span className="prdt-colection">{repositories.colecao}</span>
+        <span className="prdt-colection">{props.produto.colecao}</span>
 
-        <h1 className="product-name">{repositories.nome}</h1>
+        <h1 className="product-name">{props.produto.nome}</h1>
 
-        <h2 className="product-price">R$99.999,99</h2>
+        <h2 className="product-price">RS{props.produto.preco}</h2>
 
         <form>
             <div className="size">

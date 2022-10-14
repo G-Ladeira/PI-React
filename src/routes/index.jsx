@@ -11,7 +11,6 @@ import CheChout from "../views/checkout";
 import Cart from "../views/cart";
 import Products from "../views/products";
 import Teste from "../views/Teste";
-import ItemsHome from "../components/home/Items/item";
 
 
 
@@ -22,7 +21,7 @@ export const MainRoutes = ()=>{
            <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/aboutUs" element={<AboutView/>}/>
-            <Route path="/product" element={<Product/>}/>
+            <Route path="/product/:id" element={<Product/>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/perfil" element={<Perfil/>}/>

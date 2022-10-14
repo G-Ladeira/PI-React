@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CartHeader from "./cartHeader";
 import "./styled.sass";
+import LogoWendy from "../../images/WENDY.png"
 
 
 import BasicMenu from "./userOn";
@@ -14,7 +15,7 @@ const Header = () => {
     <main className="navBar">
 
       <Link className="linkTest" to={"/"}>
-        <h1 className="btnH1">Wendy Taylor</h1>
+        <img className="logoWendy" src={LogoWendy} alt="Velosera paixonado" />
 
       </Link>
       
