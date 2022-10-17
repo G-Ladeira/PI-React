@@ -1,29 +1,49 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 
-import "./styled.sass"
+const CarouselHome = () => {
+  return (
 
-const CarouselHome = () => (
-  <div className="fotosC">
-    <div className="carroselAlingn">
-      <Carousel >
-        <div >
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5Dzt5Z0sIKuqjoy5hc0hLKoPwToXl3QediBL-k9dNk4pATiFHVnz8GZfBJ_wvkzkNZg&usqp=CAU" alt='logo' />
+    <div>
 
-        </div>
-        <div>
-          <img src="https://img.freepik.com/fotos-gratis/alguns-aneis-de-casamento-em-plano-de-fundo-texturizado_185193-70313.jpg?w=2000" alt='logo' />
-
-        </div>
-        <div>
-          <img src="https://img.freepik.com/fotos-gratis/alguns-aneis-de-casamento-em-plano-de-fundo-texturizado_185193-70314.jpg?w=2000" alt='logo' />
-
-        </div>
-      </Carousel>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/arte-carrousel.jpg" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/arte-carrousel.jpg" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/arte-carrousel.jpg" class="d-block w-100" alt="..."/>
     </div>
   </div>
-);
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      
+    </div>
 
-export default CarouselHome;
+
+
+
+  )
+}
+
+export default CarouselHome
+
+
+
+
+
+
+

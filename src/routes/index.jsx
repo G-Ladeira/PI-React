@@ -30,6 +30,7 @@ export const MainRoutes = ()=>{
             <Route path="/products" element={<Products />} />
             <Route path="/test" element={<Teste />} />
             <Route path="/categorias/:id" exact element={<Products/>}/>
+            
 
             </Routes> 
         </>
