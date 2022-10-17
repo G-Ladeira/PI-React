@@ -6,22 +6,22 @@ const CartC = () => {
   const items = [
     {
       id: 1,
-      img: "./images/joias2.png",
-      name: "teste",
+      img: "./images/Anel.jpg",
+      name: "Anel",
       value: "200",
       description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
     },
     {
       id: 2,
-      img: "./images/joias3.png",
-      name: "teste2",
+      img: "./images/Brinco.jpg",
+      name: "Brinco",
       value: "200",
       description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
     },
     {
       id: 3,
-      img: "./images/joias4.png",
-      name: "teste3",
+      img: "./images/Bracelete.jpg",
+      name: "Bracelete",
       value: "200",
       description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
     },
@@ -31,9 +31,9 @@ const CartC = () => {
       <div className="carrinhoBox">
         <h1>Carrinho</h1>
         <div className="container-items">
-          {items.map(({id, img, name, value, description, size}) => {            
-              return(
-                <div key={id} className="product-box">
+          {items.map(({ id, img, name, value, description, size }) => {
+            return (
+              <div key={id} className="product-box">
                 <figure className="figure-product">
                   <img
                     className="img-product"
@@ -49,8 +49,8 @@ const CartC = () => {
                 <div className="buttons-product">
                   <button className="remove-button">Remover item</button>
                 </div>
-              </div>  
-              )          
+              </div>
+            )
           })}
         </div>
       </div>
