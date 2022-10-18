@@ -1,8 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../views/home";
-
 import { Product } from "../views/product";
-
 import Login from "../views/login";
 import Cadastro from "../views/cadastro";
 import Perfil from "../views/perfil";

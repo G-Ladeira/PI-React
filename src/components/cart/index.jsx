@@ -25,6 +25,8 @@ const CartC = () => {
       value: "200",
       description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
     },
+
+  
   ];
   return (
     <section className="checkoutBoX">

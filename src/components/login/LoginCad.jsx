@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
-
 import React from 'react'
-
-
 import facebook from './img/facebook.png'
 import twitter from './img/twitter.png'
 import google from './img/google.png'
 import github from './img/github.png'
-
 import "./login.sass"
 
 const LoginCadastro = () => {
@@ -16,16 +12,9 @@ const LoginCadastro = () => {
       <div id='container'>
 
         <div className='banner'>
-
-
-
         </div>
 
-
-
         <div className='box-login'>
-
-
 
           <div className='box'>
             <h2>Faça o seu login agora</h2>
@@ -34,15 +23,9 @@ const LoginCadastro = () => {
 
             <button className='button'>Login</button>
 
-
-
-
             <Link to={"/cadastro"}>
               <p>Criar conta</p>
             </Link>
-
-
-
 
             <div className='social' >
 
