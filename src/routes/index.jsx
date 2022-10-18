@@ -12,6 +12,7 @@ import Cart from "../views/cart";
 import Products from "../views/products";
 import Teste from "../views/Teste";
 
+
 export const MainRoutes = () => {
   return (
     <>
@@ -31,3 +32,4 @@ export const MainRoutes = () => {
     </>
   );
 };
+
