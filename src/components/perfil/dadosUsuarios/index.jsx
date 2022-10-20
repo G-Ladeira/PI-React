@@ -1,7 +1,9 @@
 import React from 'react'
 import './style.sass'
+import { useState } from 'react';
 
-function Userdata() {
+function Userdata(props) {
+    
     return (
         <div>
             <h1 id='myDataTitle'> Meus dados</h1>
@@ -15,7 +17,7 @@ function Userdata() {
                 <h3 className='label'>Telefone</h3>
                 <p>12345678</p>
                 <div className='divBtn'>
-                    <button className='editdata'>Editar dados</button>
+                    <button onClick={()=> props.setActive('atualizar')} className='editdata'>Editar dados</button>
                 </div>
 
             </div>
