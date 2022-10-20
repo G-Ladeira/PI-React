@@ -15,7 +15,7 @@ const LoginCadastro = () => {
         </div>
 
         <div className='box-login'>
-
+        
           <div className='box'>
             <h2>Faça o seu login agora</h2>
             <input type="text" name='nome' id='nome' placeholder='Nome' />
