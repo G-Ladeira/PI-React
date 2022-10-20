@@ -13,7 +13,7 @@ const CadastroUsuario = () => {
     
   return (
     
-    <div className="cadastro">
+    <div className="cadastroC">
       <div className="cadastro__container">
         <div className="cadastro__container__titulo">
           <h1>Cadastro</h1>

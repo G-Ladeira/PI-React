@@ -4,7 +4,6 @@ import "./style.sass"
 const url = "https://mocki.io/v1/9234e80f-9572-4d0a-8d55-e7020e912a3a"
 
 
-
 const Resume2 = () => {
 
   const [repositories, setRepositories] = useState("")
@@ -12,9 +11,8 @@ const Resume2 = () => {
           fetch(url)
               .then(response => response.json())
               .then(data => setRepositories(data))
-  }, []);
+  }, []);  
 
-  
   return (
     <div className='resume2'>
       <h2>{repositories.nome}</h2>
