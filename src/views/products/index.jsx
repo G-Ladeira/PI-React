@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { Redirect, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
 import ProductsC from '../../components/products'
@@ -16,7 +16,7 @@ const Products = (para) => {
     if (idCategoria.id) {
       api.get(`/categoria/${idCategoria.id}/produtos`)
         .then(response => {
-          setProdutos(response.data.produtoCategoria)
+          setProdutos(response.data)
         })
     } else {
       api.get(`/produtos/todos`)
@@ -33,7 +33,7 @@ const Products = (para) => {
       <div>
         <Header />
 
-        <ProductsC produtosCategoria={produtos} />
+        <ProductsC produtos={produtos} />
 
         <div className='footerP'>
           <Footer />

@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom'
 import api from '../../services'
 
 export const Product = (props) => {
-    const [produto, setProduto] = useState('');
+    const [produto, setProduto] = useState({produtoImagem:[]});
     const idProduto = useParams()
     useEffect(() => {
         api.get(`/produtos/${idProduto.id}`)

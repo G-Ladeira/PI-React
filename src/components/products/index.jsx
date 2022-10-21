@@ -30,17 +30,19 @@ const ProductsC = (props) => {
   // }, []);
   return (
     <div>
-      <h2 className='produto' >{props.produtosCategoria.length} produtos encontrados</h2>
+      <h2 className='produto' >{props.produtos.length} produtos encontrados</h2>
       <section className='sectionGrid1'>
-        {props.produtosCategoria.map((p, i) => {
+        
+        {props.produtos.map((p, i) => {
           return <article key={i}>
             <div >
               <Link to={`/product/${p.id}`}>
-                <img
+              {p.produtoImagem && p.produtoImagem[0].nome &&<img 
                   className="img_products1"
-                  src="../images/joias2.png"
-                  alt="product"
-                />
+                  src={p.produtoImagem[0].nome}
+                  alt={p.nome}
+                />}
+                
               </Link>
             </div>
             <div className='infoP'>

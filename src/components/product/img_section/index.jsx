@@ -1,24 +1,16 @@
-import React from "react"
-import Joia from "../../../images/joias6.png"
 import './style.sass'
+import { React } from 'react'
 
 
+const Display = (props) => {
+    
 
-
-const Display = () => {
-
-    return (
-        
+    return ( 
             <div className="product-images">
-
-                <img className="img-1" src={Joia} alt="" />
-
-
-                <img className="img-2" src={Joia} alt="" />
-                <img className="img-3" src={Joia} alt="" />
-                <img className="img-4" src={Joia} alt="" />
-
-
+                {/* {props.produto.produtoImagem.map((p,i) =>{
+                    <p>{p}</p>
+                })} */}
+                {props.produto.produtoImagem && props.produto.produtoImagem.length &&<img className="img-1" src={props.produto.produtoImagem[0].nome} alt="asbdauidhasdhasuih" />}
 
             </div>
        

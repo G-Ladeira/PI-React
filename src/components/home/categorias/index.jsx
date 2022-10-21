@@ -14,7 +14,7 @@ const ListHome = () => {
             <h2 className='srcForCat'>Pesquise por categorias:</h2>
 
             <section className='repositoryMap'>
-                <Link key={1} to={`/categorias/${1}`}>
+                <Link to={`/categorias/${1}`}>
                     <section className='secHome'>
 
 
@@ -29,7 +29,7 @@ const ListHome = () => {
                     </section>
 
                 </Link>
-                <Link key={1} to={`/categorias/${2}`}>
+                <Link to={`/categorias/${2}`}>
                     <section className='secHome'>
 
 
@@ -44,7 +44,7 @@ const ListHome = () => {
                     </section>
 
                 </Link>
-                <Link key={1} to={`/categorias/${3}`}>
+                <Link to={`/categorias/${3}`}>
                     <section className='secHome'>
                         <article className='artHome'>
 
@@ -55,7 +55,7 @@ const ListHome = () => {
 
                     </section>
                 </Link>
-                <Link key={1} to={`/categorias/${4}`}>
+                <Link to={`/categorias/${4}`}>
                     <section className='secHome'>
                         <article className='artHome'>
 
