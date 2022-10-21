@@ -13,7 +13,7 @@ const CadastroUsuario = () => {
   const [erro, setErro] = useState("")
   const [sucesso, setSucesso] = useState("")
   const [loading, setLoading] = useState(false)
-  
+
   function cadastrousuario() {
     console.log(nome, email, senha)
 
@@ -29,28 +29,23 @@ const CadastroUsuario = () => {
 
         <div className="cadastroForm">
           <div className="cadastroInput">
-            <label>Nome</label>
-            <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+            <input type="text" placeholder='Nome' value={nome} onChange={(e) => setNome(e.target.value)} />
           </div>
 
           <div className="cadastroInput">
-            <label>Email</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
 
           <div className="cadastroInput">
-            <label>Telefone</label>
-            <input type="telefone" value={senha} onChange={(e) => setSenha(e.target.value)} />
+            <input type="telefone" placeholder='Telefone' value={senha} onChange={(e) => setSenha(e.target.value)} />
           </div>
 
           <div className="cadastroInput">
-            <label>Senha</label>
-            <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+            <input type="password" placeholder='Senha' value={senha} onChange={(e) => setSenha(e.target.value)} />
           </div>
 
           <div className="cadastroInput cadastroSesenha">
-            <label>Confirmar Senha</label>
-            <input type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
+            <input type="password" placeholder='Confirmar Senha' value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
           </div>
           
 

@@ -26,7 +26,7 @@ function LoginCadastro() {
         <div className='box-login'>
         
           <div className='box'>
-            <h2>Faça o seu login agora</h2>
+            <h2 className="titulo">Faça o seu login agora</h2>
             <input type="email" name='email' id='email' placeholder='E-mail' />
             <input type='password' name='password' id='Senha' placeholder='Senha' />
 
