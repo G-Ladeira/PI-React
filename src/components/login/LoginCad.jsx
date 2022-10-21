@@ -34,24 +34,11 @@ const LoginCadastro = () => {
               <img id='img-icon' src={google} alt="face" />
               <img id='img-icon' src={github} alt="face" />
 
-
             </div>
-
-
           </div>
-
         </div>
-
-
-
-
-
-
-
-
       </div>
     </main>
-
 
   )
 }

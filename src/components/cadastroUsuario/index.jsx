@@ -42,6 +42,11 @@ const CadastroUsuario = () => {
           </div>
 
           <div className="cadastroInput">
+            <label>Telefone</label>
+            <input type="telefone" value={senha} onChange={(e) => setSenha(e.target.value)} />
+          </div>
+
+          <div className="cadastroInput">
             <label>Senha</label>
             <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
           </div>
@@ -50,13 +55,7 @@ const CadastroUsuario = () => {
             <label>Confirmar Senha</label>
             <input type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
           </div>
-          <div className="social">
-          <img id='img-icon' src={facebook} alt="face" />
-              <img id='img-icon' src={twitter} alt="face" />
-              <img id='img-icon' src={google} alt="face" />
-              <img id='img-icon' src={github} alt="face" />
-          </div>
-
+          
 
           <div className="cadastro__container__form__botao">
             <button className='botaoCadastro' onClick={cadastrousuario}>Cadastrar</button>
