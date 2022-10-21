@@ -1,10 +1,6 @@
 import { Api, SettingsSuggestRounded } from '@mui/icons-material'
 import React, { useState } from 'react'
 import "./cadastro.sass"
-import facebook from '../../components/login/img/facebook.png'
-import google from '../../components/login/img/google.png'
-import github from '../../components/login/img/github.png'
-import twitter from '../../components/login/img/twitter.png'
 import api from "../../services/index"
 
 
@@ -17,6 +13,7 @@ const CadastroUsuario = () => {
   const [erro, setErro] = useState("")
   const [sucesso, setSucesso] = useState("")
   const [loading, setLoading] = useState(false)
+  
   function cadastrousuario() {
     console.log(nome, email, senha)
 
