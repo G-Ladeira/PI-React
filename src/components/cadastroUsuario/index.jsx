@@ -30,27 +30,27 @@ const CadastroUsuario = () => {
           <h1>Cadastro</h1>
         </div>
 
-        <div className="cadastro__container__form">
-          <div className="cadastro__container__form__nome">
+        <div className="cadastroForm">
+          <div className="cadastroInput">
             <label>Nome</label>
             <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
           </div>
 
-          <div className="cadastro__container__form__email">
+          <div className="cadastroInput">
             <label>Email</label>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
 
-          <div className="cadastro__container__form__senha">
+          <div className="cadastroInput">
             <label>Senha</label>
             <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
           </div>
 
-          <div className="cadastro__container__form__confirmarSenha">
+          <div className="cadastroInput cadastroSesenha">
             <label>Confirmar Senha</label>
             <input type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
           </div>
-          <div className="Social">
+          <div className="social">
           <img id='img-icon' src={facebook} alt="face" />
               <img id='img-icon' src={twitter} alt="face" />
               <img id='img-icon' src={google} alt="face" />
@@ -59,7 +59,7 @@ const CadastroUsuario = () => {
 
 
           <div className="cadastro__container__form__botao">
-            <button onClick={cadastrousuario}>Cadastrar</button>
+            <button className='botaoCadastro' onClick={cadastrousuario}>Cadastrar</button>
           </div>
         </div>
       </div>
