@@ -1,7 +1,14 @@
 import { Api, SettingsSuggestRounded } from '@mui/icons-material'
 import React, { useState } from 'react'
 import "./cadastro.sass"
+import facebook from '../../components/login/img/facebook.png'
+import google from '../../components/login/img/google.png'
+import github from '../../components/login/img/github.png'
+import twitter from '../../components/login/img/twitter.png'
 import api from "../../services/index"
+
+
+
 const CadastroUsuario = () => {
   const [nome, setNome] = useState("")
   const [email, setEmail] = useState("")
@@ -22,7 +29,7 @@ const CadastroUsuario = () => {
         <div className="cadastro__container__titulo">
           <h1>Cadastro</h1>
         </div>
-        
+
         <div className="cadastro__container__form">
           <div className="cadastro__container__form__nome">
             <label>Nome</label>
@@ -43,6 +50,13 @@ const CadastroUsuario = () => {
             <label>Confirmar Senha</label>
             <input type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
           </div>
+          <div className="Social">
+          <img id='img-icon' src={facebook} alt="face" />
+              <img id='img-icon' src={twitter} alt="face" />
+              <img id='img-icon' src={google} alt="face" />
+              <img id='img-icon' src={github} alt="face" />
+          </div>
+
 
           <div className="cadastro__container__form__botao">
             <button onClick={cadastrousuario}>Cadastrar</button>
