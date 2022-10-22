@@ -4,6 +4,9 @@ import "./styled.sass";
 import LogoWendy from "../../images/WENDY.png"
 
 
+
+
+
 import BasicMenu from "./userOn";
 
 
@@ -19,9 +22,6 @@ const Header = () => {
 
       </Link>
       
-
-
-
       <ul className="navOptions">
         <Link to={"/products"}>
           <li className="toJoias" >Joias</li>
