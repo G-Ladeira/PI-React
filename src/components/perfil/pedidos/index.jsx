@@ -8,7 +8,7 @@ const VerPedidos = () => {
 
 
 <>
-            <div className="userOrders">
+            <div id="userOrders">
 
                 <h2 className="ordersText">Meus Pedidos</h2>
                 <div className="ordersTable">

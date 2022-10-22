@@ -4,17 +4,18 @@ import facebook from './img/facebook.png'
 import twitter from './img/twitter.png'
 import google from './img/google.png'
 import github from './img/github.png'
+import api from '../../services/index'
 import "./login.sass"
 
 const LoginCadastro = () => {
 const [email, setEmail] = useState("")
 const [senha, setSenha] = useState("")
 
-function LoginCadastro() {
-  console.log(nome, email, senha)
+// function LoginCadastro() {
+//   console.log(nome, email, senha)
 
   api.post("/users/login", {email, senha })
-}
+
 
   return (
     <main id='containerPrimary'>

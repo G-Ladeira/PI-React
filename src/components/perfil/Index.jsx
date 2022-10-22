@@ -33,6 +33,7 @@ function UserView() {
             sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
             component="nav"
             aria-labelledby="nested-list-subheader"
+            className='listMui'
             subheader={
               <ListSubheader component="div" id="nested-list-subheader">
 
@@ -64,12 +65,10 @@ function UserView() {
 
             {active === 'perfil' && <Userdata setActive={setActive}/>}
             {active === 'endereco' && <Endereco />}
-            {active === 'atualizar' && <AlterCadastro  />}
+            {active === 'atualizar' && <AlterCadastro  />}{active === 'pedido' && <VerPedidos />}
 
         </div>
-        <div className="orderSection">
-          {active === 'pedido' && <VerPedidos />}
-        </div>
+        
 
       </div>
       <Footer />
