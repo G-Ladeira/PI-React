@@ -9,6 +9,7 @@ const CadastroUsuario = () => {
   const [nome, setNome] = useState("")
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
+  const [telefone, setTelefone] = useState("")
   const [confirmarSenha, setConfirmarSenha] = useState("")
   const [erro, setErro] = useState("")
   const [sucesso, setSucesso] = useState("")
@@ -37,7 +38,7 @@ const CadastroUsuario = () => {
           </div>
 
           <div className="cadastroInput">
-            <input type="telefone" placeholder='Telefone' value={senha} onChange={(e) => setSenha(e.target.value)} />
+            <input type="telefone" placeholder='Telefone' value={telefone} onChange={(e) => setTelefone(e.target.value)} />
           </div>
 
           <div className="cadastroInput">
