@@ -52,11 +52,12 @@ const CadastroUsuario = () => {
 
           <div className="cadastro__container__form__botao">
             <button className='botaoCadastro' onClick={cadastrousuario}>Cadastrar</button>
+            
           </div>
         </div>
       </div>
     </div>
-
+  
   )
 }
 export default CadastroUsuario
