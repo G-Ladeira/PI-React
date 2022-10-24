@@ -2,6 +2,8 @@ import React from "react";
 import Resume2 from "./resumo2";
 import "./style.sass";
 
+
+
 const CartC = () => {
   const items = [
     {
@@ -28,6 +30,7 @@ const CartC = () => {
 
   
   ];
+  
   return (
     <section className="checkoutBoX">
       <div className="carrinhoBox">
@@ -49,7 +52,7 @@ const CartC = () => {
                   <p className="product-description">Descrição: {description}</p>
                 </div>
                 <div className="buttons-product">
-                  <button className="remove-button">Remover item</button>
+                  <button className="remove-button" >Remover item</button>
                 </div>
               </div>
             )

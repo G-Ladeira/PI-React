@@ -9,6 +9,8 @@ import api from '../../services';
 
 const ProductsC = (props) => {
 
+
+  
   // const [produtos, setProdutos] = useState([]);
   // function loadProdutos() {
 
