@@ -1,10 +1,14 @@
 import { React, useState, useEffect } from 'react'
 import './style.sass'
 
-const url = "https://mocki.io/v1/9234e80f-9572-4d0a-8d55-e7020e912a3a"
+const url = "https://mocki.io/v1/437bcc90-a990-4a4e-9147-f35ba94898db"
 
 
-
+function salvarLocalStorage(produto){
+    localStorage.setItem("produto" , JSON.stringify(produto))
+   const nomeLocal = localStorage.getItem("produto")
+console.log(nomeLocal)
+}
 
 
 const Info = (props) => {
@@ -47,7 +51,7 @@ const Info = (props) => {
                 </select>
             </div>
 
-            <button className='btnAdd'>Adcionar à sacola</button>
+            <button onClick={()=>salvarLocalStorage(repositories)}  className='btnAdd'>Adcionar à sacola</button>
         </form>
     </>
 

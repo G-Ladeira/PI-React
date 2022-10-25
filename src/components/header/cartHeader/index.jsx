@@ -8,10 +8,11 @@ import "./sytle.sass"
 export default function CartHeader() {
   return (
     <Stack >
-      
+      <div className='cart007'>
       <IconButton className='logoCart' color="primary" aria-label="add to shopping cart">
         <AddShoppingCartIcon />
       </IconButton>
+      </div>
     </Stack>
   );
 }
