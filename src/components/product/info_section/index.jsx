@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import './style.sass'
+import api from '../../../services/index'
 
-const url = "https://mocki.io/v1/437bcc90-a990-4a4e-9147-f35ba94898db"
 
 
 function salvarLocalStorage(produto){
@@ -16,7 +16,7 @@ const Info = (props) => {
     const [repositories, setRepositories] = useState("")
     useEffect(() => {
         setTimeout(() => {
-            fetch(url)
+            fetch(api)
                 .then(response => response.json())
                 .then(data => setRepositories(data))
 

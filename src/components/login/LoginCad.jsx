@@ -30,7 +30,8 @@ const LoginCadastro = () => {
     const value = {
       email: email,
       senha: senha
-    }
+    } 
+    console.log(value)
     api.post("/users/login", value)
       .then((response) => {
         toast.success("Login realizado com sucesso!");
