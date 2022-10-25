@@ -1,22 +1,52 @@
-import { Link } from "react-router-dom";
-import React, { useState } from 'react'
+import { Link, useNavigate } from "react-router-dom";
+import React, {useContext } from 'react'
 import facebook from './img/facebook.png'
 import twitter from './img/twitter.png'
 import google from './img/google.png'
 import github from './img/github.png'
 import api from '../../services/index'
 import "./login.sass"
+import { toast } from 'react-toastify';
+import { LoginContext } from "../../context/LoginContext";
 
 const LoginCadastro = () => {
-const [email, setEmail] = useState("")
-const [senha, setSenha] = useState("")
 
-// function LoginCadastro() {
-//   console.log(nome, email, senha)
+  const { email, setEmail } = useContext(LoginContext);
+  const { senha, setSenha } = useContext(LoginContext);
+ 
+  const navigate = useNavigate();
 
-  api.post("/users/login", {email, senha })
+  function handleChangeEmail(event) {
+    let email = event.target.value;
+    setEmail(email);
+  }
+  function handleChangeSenha(event) {
+    let senha = event.target.value;
+    setSenha(senha);
+  }
 
-
+  function handleSubmit(e) {
+    e.preventDefault();
+    const value = {
+      email: email,
+      senha: senha
+    }
+    api.post("/users/login", value)
+      .then((response) => {
+        toast.success("Login realizado com sucesso!");
+        navigate("/");
+        //const token = response.data.token;
+        // if (token) {
+        //   toast.success("Login realizado com sucesso!");
+        //   //localStorage.setItem("WT::token", token);
+        //   navigate("/");
+        // }
+    })
+    .catch((error) => {
+      toast.error("Erro ao realizar login!");
+    })
+  }
+  
   return (
     <main id='containerPrimary'>
       <div id='container'>
@@ -28,10 +58,10 @@ const [senha, setSenha] = useState("")
         
           <div className='box'>
             <h2 className="titulo">Faça o seu login agora</h2>
-            <input type="email" name='email' id='email' placeholder='E-mail' />
-            <input type='password' name='password' id='Senha' placeholder='Senha' />
+            <input onChange={handleChangeEmail} value={email} type="email" id='email' placeholder='Digite o seu E-mail' />
+            <input onChange={handleChangeSenha} value={senha} type='password' id='Senha' placeholder='Digite a sua Senha' />
 
-            <button className='button'>Login</button>
+            <button onClick={handleSubmit} className='button'>Login</button>
 
             <Link to={"/cadastro"}>
               <p>Criar conta</p>
@@ -40,9 +70,9 @@ const [senha, setSenha] = useState("")
             <div className='social' >
 
               <img id='img-icon' src={facebook} alt="face" />
-              <img id='img-icon' src={twitter} alt="face" />
-              <img id='img-icon' src={google} alt="face" />
-              <img id='img-icon' src={github} alt="face" />
+              <img id='img-icon' src={twitter} alt="twitter" />
+              <img id='img-icon' src={google} alt="google" />
+              <img id='img-icon' src={github} alt="github" />
 
             </div>
           </div>

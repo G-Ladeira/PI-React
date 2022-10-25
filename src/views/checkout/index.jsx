@@ -4,7 +4,7 @@ import Footer from '../../components/footer'
 import Header from '../../components/header'
 
 import "./style.sass"
-
+//CHECKOUT
 const CheChout = () => {
   return (
     <div>

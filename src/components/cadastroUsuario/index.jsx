@@ -1,25 +1,37 @@
-import { Api, SettingsSuggestRounded } from '@mui/icons-material'
-import React, { useState } from 'react'
+import React, { useContext} from 'react'
+import { toast } from 'react-toastify';
 import "./cadastro.sass"
 import api from "../../services/index"
+import { useNavigate } from "react-router-dom";
+import {CadastroContext} from "../../context/CadastroContext"
 
 
 
 const CadastroUsuario = () => {
-  const [nome, setNome] = useState("")
-  const [email, setEmail] = useState("")
-  const [senha, setSenha] = useState("")
-  const [telefone, setTelefone] = useState("")
-  const [confirmarSenha, setConfirmarSenha] = useState("")
-  const [erro, setErro] = useState("")
-  const [sucesso, setSucesso] = useState("")
-  const [loading, setLoading] = useState(false)
+  const navigate = useNavigate();
+  const { nome, setNome } = useContext(CadastroContext);
+  const { email, setEmail } = useContext(CadastroContext);
+  const { senha, setSenha } = useContext(CadastroContext);
+  const { confirmarSenha, setConfirmarSenha } = useContext(CadastroContext);
+  const { telefone, setTelefone } = useContext(CadastroContext);
 
-  function cadastrousuario() {
-    console.log(nome, email, senha)
-
-    api.post("/users/cadastro", { nome, email, senha, telefone: "123456789" })
+  const value = {
+    nome: nome,
+    email: email,
+    senha: senha,
+    telefone: telefone,
   }
+  function cadastrousuario() {
+    api.post("/users/cadastro", value).then((response) => {
+      toast.success("Cadastro realizado com sucesso")
+      navigate("/login")
+
+    }).catch((error) => {
+      toast.error("Erro ao cadastrar usuário")
+    })
+  }
+  
+  
   return (
 
     <div className="cadastroC">

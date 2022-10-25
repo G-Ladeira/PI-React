@@ -1,51 +1,32 @@
 import React from "react";
 import Resume2 from "./resumo2";
 import "./style.sass";
+// import { useContext } from "react";
+// import { CartContext } from "../../context/CartContext";
 
 
-function removeObjectWithId(arr, id) {
-  const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
-  arr.splice(objWithIdIndex, 1);
-
-  return arr;
-}
-
-function remover (id) {
-  console.log("removi")
-  const itemsRaw = localStorage.getItem("produto") 
-  let items = JSON.parse(itemsRaw);
-  removeObjectWithId(items , id)
-  localStorage.removeItem("produto")
-  localStorage.setItem("produto" , JSON.stringify(items))
-  
-}
 
 const CartC = () => {
-  // const items = [
-  //   {
-  //     id: 1,
-  //     img: "./images/Anel.jpg",
-  //     name: "Anel",
-  //     value: "200",
-  //     description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
-  //   },
-  //   {
-  //     id: 2,
-  //     img: "./images/Brinco.jpg",
-  //     name: "Brinco",
-  //     value: "200",
-  //     description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
-  //   },
-  //   {
-  //     id: 3,
-  //     img: "./images/Bracelete.jpg",
-  //     name: "Bracelete",
-  //     value: "200",
-  //     description: "Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit.",
-  //   },
 
   
-  // ];
+  function removeObjectWithId(arr, id) {
+    const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
+    arr.splice(objWithIdIndex, 1);
+  
+    return arr;
+  }
+  function remover (id) {
+    console.log("removi")
+    const itemsRaw = localStorage.getItem("produto") 
+    let items = JSON.parse(itemsRaw);
+    removeObjectWithId(items , id)
+    localStorage.removeItem("produto")
+    localStorage.setItem("produto" , JSON.stringify(items))
+    
+  }
+  // function handleClick() {
+    
+  // }
 
   const items1 = localStorage.getItem("produto") 
   let items = JSON.parse(items1);
@@ -74,7 +55,7 @@ const CartC = () => {
                   <p className="product-description">Descrição: {colecao}</p>
                 </div>
                 <div className="buttons-product">
-                  <button  onClick={() => remover(id)} className="remove-button" >Remover item</button>
+                  <button  onClick={()=>remover(id)} className="remove-button" >Remover item</button>
                 </div>
               </div>
             )
