@@ -3,7 +3,7 @@ import React from 'react'
 
 import "./style.sass";
 
-const AlterCadastro = () => {
+const AlterCadastro = (props) => {
   
   return (
 
