@@ -5,6 +5,7 @@ import './styled.sass'
 const Footer = () => {
   return (
     <footer className='footerF'>
+      <div className='conteudoG'>
         <div className="containerFooter">
             <div className="logo-icon">
                 <img className='logoFooter' src={logo} alt="wedy" />
@@ -14,7 +15,7 @@ const Footer = () => {
                     </p>
 
                 
-                <p>
+                <p >
                     AVENIDA PAULISTA, 4242 <br/>
                     BAIRRO CONSOLAÇÃO  <br/>
                     
@@ -27,6 +28,7 @@ const Footer = () => {
               </iframe>
                 
             </div>
+        </div>
         </div>
         <div className="last">wendytaylor 2022 - São paulo -Brasil</div>
     </footer>
