@@ -33,7 +33,7 @@ const AlterCadastro = () => {
 
 
 
-        <button id='buttonAtt'> Salvar os Dados </button>
+        <button onClick={()=> props.setActive('atualizar')} className='editdata2'>Salvar</button>
 
 
       </div>
