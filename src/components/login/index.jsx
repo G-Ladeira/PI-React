@@ -5,7 +5,7 @@ import twitter from './img/twitter.png'
 import google from './img/google.png'
 import github from './img/github.png'
 import api from '../../services/index'
-import "./login.sass"
+import "./style.sass"
 import { toast } from 'react-toastify';
 import { LoginContext } from "../../context/LoginContext";
 
@@ -34,14 +34,14 @@ const LoginCadastro = () => {
     console.log(value)
     api.post("/users/login", value)
       .then((response) => {
-        toast.success("Login realizado com sucesso!");
-        navigate("/");
-        //const token = response.data.token;
-        // if (token) {
-        //   toast.success("Login realizado com sucesso!");
-        //   //localStorage.setItem("WT::token", token);
-        //   navigate("/");
-        // }
+        // toast.success("Login realizado com sucesso!");
+        // navigate("/");
+        const token = response.data.token;
+        if (token) {
+          toast.success("Login realizado com sucesso!");
+          localStorage.setItem("WT::token", token);
+          navigate("/");
+        }
     })
     .catch((error) => {
       toast.error("Erro ao realizar login!");

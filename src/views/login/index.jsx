@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../../components/footer'
 import Header from '../../components/header'
-import LoginCadastro from '../../components/login/LoginCad'
+import LoginCadastro from '../../components/login'
 import api from '../../services';
 
 import "./style.sass"

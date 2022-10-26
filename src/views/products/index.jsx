@@ -32,16 +32,12 @@ const Products = (para) => {
     return (
       <div>
         <Header />
-
+        
         <ProductsC produtos={produtos} />
 
         <div className='footerP'>
           <Footer />
-
         </div>
-
-
-
       </div>
     )
   }

@@ -21,8 +21,6 @@ export const Product = (props) => {
 
     return (
 
-
-
         <>
             <Header />
             <section className="product-section">
